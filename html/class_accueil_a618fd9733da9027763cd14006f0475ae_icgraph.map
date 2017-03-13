@@ -1,0 +1,5 @@
+<map id="Accueil::actBoutonConnexion" name="Accueil::actBoutonConnexion">
+<area shape="rect" id="node3" href="$class_accueil.html#aaf5763940627534a3803470dc6c9153e" title="lorsque le texte du lineEdit change" alt="" coords="249,5,431,51"/>
+<area shape="rect" id="node5" href="$class_accueil.html#adbee1c25bc25bcb1bb266a9f583d1b1e" title="lorsque le texte du lineEdit change" alt="" coords="256,74,424,121"/>
+<area shape="rect" id="node7" href="$class_accueil.html#ab1395f01e2ed26ed042e4be26b1b1bfb" title="lorsque le texte du lineEdit change" alt="" coords="259,143,421,190"/>
+</map>

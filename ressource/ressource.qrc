@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>logo2.png</file>
+    </qresource>
+    <qresource prefix="/font">
+        <file>Cantarell-Bold.ttf</file>
+        <file>Cantarell-BoldOblique.ttf</file>
+        <file>Cantarell-Oblique.ttf</file>
+        <file>Cantarell-Regular.ttf</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,293 @@
+\hypertarget{class_main_window}{\section{Main\-Window Class Reference}
+\label{class_main_window}\index{Main\-Window@{Main\-Window}}
+}
+
+
+{\ttfamily \#include $<$mainwindow.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}{Main\-Window} (Q\-Widget $\ast$parent=0)
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_main_window}{Main\-Window}. \end{DoxyCompactList}\item 
+\hyperlink{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{$\sim$\-Main\-Window} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\-Vector$<$ Q\-String $>$ \hyperlink{class_main_window_a5f49a678546840890fce99215d0d086c}{vect\-Requete}
+\begin{DoxyCompactList}\small\item\em vect\-Requete $\ast$vecteur de requête qui permet stocker les requête historiser \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_main_window_a7d0e1b08003371dc8ff793d6b5486922}{on\-\_\-combo\-Box\-List\-B\-D\-D\-\_\-activated} (const Q\-String \&arg1)
+\begin{DoxyCompactList}\small\item\em selection de la données dans la combo box \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_a7a5503fe944b455e6c28f40ef5fa2200}{on\-\_\-list\-Widget\-Table\-\_\-item\-Clicked} (Q\-List\-Widget\-Item $\ast$item)
+\begin{DoxyCompactList}\small\item\em selction d'une tables de la liste \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_a6c58d1c698cb819af30fd5c2e8aefcf0}{on\-\_\-text\-Edit\-\_\-text\-Changed} ()
+\begin{DoxyCompactList}\small\item\em lorseque le texte change dans l'editeur de texte pour la requête $\ast$\-Permet de verifier si la requête est correcte à chaque fois que le texte change \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_ad2b7c5e0d452224c1ef4f9ee2d093f07}{on\-\_\-push\-Button\-Erreur\-\_\-clicked} ()
+\begin{DoxyCompactList}\small\item\em bouton erreur $\ast$\-Permet d'afficher l'erreur S\-Q\-L de la requête quand la requête n'est pas correct \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_a8ba1fa24949d7a52ddac98b8723819a0}{on\-\_\-push\-Button\-Clean\-\_\-clicked} ()
+\begin{DoxyCompactList}\small\item\em bouton nettoyer $\ast$\-Permet de nettoyer la zone de resultat,zone d'erreur et la zone de texte \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_aa8a14a7ebcd9224ebf3af3f468d831b1}{on\-\_\-push\-Button\-Historiser\-\_\-clicked} ()
+\begin{DoxyCompactList}\small\item\em bouton historiser $\ast$\-Permet de mettre dans la liste historique et dans le vecteur de requête la requête inscrite dans la zone de texte \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_a673e50dcdf9b19caf39cd0c9fc56bde1}{on\-\_\-push\-Button\-Enregistrer\-\_\-clicked} ()
+\begin{DoxyCompactList}\small\item\em bouton enregistrer $\ast$\-Permet de sauvegarder ce qui a été historiser dans un document '.sql' \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_a4de79c63c7fa0b8d7c468ac71f20be81}{on\-\_\-push\-Button\-\_\-clicked} ()
+\begin{DoxyCompactList}\small\item\em bouton ouvrir $\ast$\-Permet d'ouvrir un fichier '.sql' pour charger des requête dans le vecteur et das la liste prévue à cette effet \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_add2e908bb2749656382371387aee1925}{on\-\_\-action\-\_\-\-Quitter\-\_\-triggered} ()
+\begin{DoxyCompactList}\small\item\em menu fichier/quitter $\ast$\-Permet de quitter l'application \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_a632c187ea7c5c0ceb9ffc7977da06f97}{on\-\_\-action\-\_\-\-Save\-\_\-triggered} ()
+\begin{DoxyCompactList}\small\item\em menu fichier/sauvegarde $\ast$\-Permet de sauvegarder dans un fichier '.sql' ce qui il ya dans la liste et dans le vecteur \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_a2ea16d8091291492f27f21c77a67b25a}{on\-\_\-action\-\_\-\-Open\-\_\-triggered} ()
+\begin{DoxyCompactList}\small\item\em menu fichier/ouvrir $\ast$\-Permet d'ouvrir un document '.sql' pour charger des requête dans le vecteur et la lsite \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_ae0e46dc3da4ee07bf66e73e20300220c}{on\-\_\-push\-Button\-\_\-2\-\_\-clicked} ()
+\begin{DoxyCompactList}\small\item\em bouton sauvegarder le resultat $\ast$\-Permet d'exporter le tableaux du resultat au format '.csv' \end{DoxyCompactList}\item 
+void \hyperlink{class_main_window_ae0c936a373039e3683d5cf838511842d}{on\-\_\-list\-Widget\-Historique\-\_\-item\-Clicked} (Q\-List\-Widget\-Item $\ast$item)
+\begin{DoxyCompactList}\small\item\em l'utilisateur clicl sur un item de la liste de l'historique \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_main_window_a1806a3496bae552b99a6c4e7e94c6b06}{remplire\-Liste\-Table} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Ui\-::\-Main\-Window $\ast$ \hyperlink{class_main_window_a35466a70ed47252a0191168126a352a5}{ui}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}{\index{Main\-Window@{Main\-Window}!Main\-Window@{Main\-Window}}
+\index{Main\-Window@{Main\-Window}!MainWindow@{Main\-Window}}
+\subsubsection[{Main\-Window}]{\setlength{\rightskip}{0pt plus 5cm}Main\-Window\-::\-Main\-Window (
+\begin{DoxyParamCaption}
+\item[{Q\-Widget $\ast$}]{parent = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}
+
+
+\hyperlink{class_main_window}{Main\-Window}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em parent} & $\ast$constructeur de la mainwindow \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}{\index{Main\-Window@{Main\-Window}!$\sim$\-Main\-Window@{$\sim$\-Main\-Window}}
+\index{$\sim$\-Main\-Window@{$\sim$\-Main\-Window}!MainWindow@{Main\-Window}}
+\subsubsection[{$\sim$\-Main\-Window}]{\setlength{\rightskip}{0pt plus 5cm}Main\-Window\-::$\sim$\-Main\-Window (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_main_window_ae98d00a93bc118200eeef9f9bba1dba7}
+$\ast$destructeur de la mainwindow 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_main_window_a2ea16d8091291492f27f21c77a67b25a}{\index{Main\-Window@{Main\-Window}!on\-\_\-action\-\_\-\-Open\-\_\-triggered@{on\-\_\-action\-\_\-\-Open\-\_\-triggered}}
+\index{on\-\_\-action\-\_\-\-Open\-\_\-triggered@{on\-\_\-action\-\_\-\-Open\-\_\-triggered}!MainWindow@{Main\-Window}}
+\subsubsection[{on\-\_\-action\-\_\-\-Open\-\_\-triggered}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::on\-\_\-action\-\_\-\-Open\-\_\-triggered (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_main_window_a2ea16d8091291492f27f21c77a67b25a}
+
+
+menu fichier/ouvrir $\ast$\-Permet d'ouvrir un document '.sql' pour charger des requête dans le vecteur et la lsite 
+
+\hypertarget{class_main_window_add2e908bb2749656382371387aee1925}{\index{Main\-Window@{Main\-Window}!on\-\_\-action\-\_\-\-Quitter\-\_\-triggered@{on\-\_\-action\-\_\-\-Quitter\-\_\-triggered}}
+\index{on\-\_\-action\-\_\-\-Quitter\-\_\-triggered@{on\-\_\-action\-\_\-\-Quitter\-\_\-triggered}!MainWindow@{Main\-Window}}
+\subsubsection[{on\-\_\-action\-\_\-\-Quitter\-\_\-triggered}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::on\-\_\-action\-\_\-\-Quitter\-\_\-triggered (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_main_window_add2e908bb2749656382371387aee1925}
+
+
+menu fichier/quitter $\ast$\-Permet de quitter l'application 
+
+\hypertarget{class_main_window_a632c187ea7c5c0ceb9ffc7977da06f97}{\index{Main\-Window@{Main\-Window}!on\-\_\-action\-\_\-\-Save\-\_\-triggered@{on\-\_\-action\-\_\-\-Save\-\_\-triggered}}
+\index{on\-\_\-action\-\_\-\-Save\-\_\-triggered@{on\-\_\-action\-\_\-\-Save\-\_\-triggered}!MainWindow@{Main\-Window}}
+\subsubsection[{on\-\_\-action\-\_\-\-Save\-\_\-triggered}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::on\-\_\-action\-\_\-\-Save\-\_\-triggered (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_main_window_a632c187ea7c5c0ceb9ffc7977da06f97}
+
+
+menu fichier/sauvegarde $\ast$\-Permet de sauvegarder dans un fichier '.sql' ce qui il ya dans la liste et dans le vecteur 
+
+\hypertarget{class_main_window_a7d0e1b08003371dc8ff793d6b5486922}{\index{Main\-Window@{Main\-Window}!on\-\_\-combo\-Box\-List\-B\-D\-D\-\_\-activated@{on\-\_\-combo\-Box\-List\-B\-D\-D\-\_\-activated}}
+\index{on\-\_\-combo\-Box\-List\-B\-D\-D\-\_\-activated@{on\-\_\-combo\-Box\-List\-B\-D\-D\-\_\-activated}!MainWindow@{Main\-Window}}
+\subsubsection[{on\-\_\-combo\-Box\-List\-B\-D\-D\-\_\-activated}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::on\-\_\-combo\-Box\-List\-B\-D\-D\-\_\-activated (
+\begin{DoxyParamCaption}
+\item[{const Q\-String \&}]{arg1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_main_window_a7d0e1b08003371dc8ff793d6b5486922}
+
+
+selection de la données dans la combo box 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nom} & de l'objet seelctionner $\ast$\-Permet de selectionner un objet dans la combo box et donc d'initialiser la base de données et les tables de celle-\/ci \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_window_a7d0e1b08003371dc8ff793d6b5486922_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_main_window_ae0c936a373039e3683d5cf838511842d}{\index{Main\-Window@{Main\-Window}!on\-\_\-list\-Widget\-Historique\-\_\-item\-Clicked@{on\-\_\-list\-Widget\-Historique\-\_\-item\-Clicked}}
+\index{on\-\_\-list\-Widget\-Historique\-\_\-item\-Clicked@{on\-\_\-list\-Widget\-Historique\-\_\-item\-Clicked}!MainWindow@{Main\-Window}}
+\subsubsection[{on\-\_\-list\-Widget\-Historique\-\_\-item\-Clicked}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::on\-\_\-list\-Widget\-Historique\-\_\-item\-Clicked (
+\begin{DoxyParamCaption}
+\item[{Q\-List\-Widget\-Item $\ast$}]{item}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_main_window_ae0c936a373039e3683d5cf838511842d}
+
+
+l'utilisateur clicl sur un item de la liste de l'historique 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & $\ast$\-Permet d'ajouter la requête selectionner dans la zone de texte \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_main_window_a7a5503fe944b455e6c28f40ef5fa2200}{\index{Main\-Window@{Main\-Window}!on\-\_\-list\-Widget\-Table\-\_\-item\-Clicked@{on\-\_\-list\-Widget\-Table\-\_\-item\-Clicked}}
+\index{on\-\_\-list\-Widget\-Table\-\_\-item\-Clicked@{on\-\_\-list\-Widget\-Table\-\_\-item\-Clicked}!MainWindow@{Main\-Window}}
+\subsubsection[{on\-\_\-list\-Widget\-Table\-\_\-item\-Clicked}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::on\-\_\-list\-Widget\-Table\-\_\-item\-Clicked (
+\begin{DoxyParamCaption}
+\item[{Q\-List\-Widget\-Item $\ast$}]{item}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_main_window_a7a5503fe944b455e6c28f40ef5fa2200}
+
+
+selction d'une tables de la liste 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & $\ast$\-Permet d'initialiser la liste des champs lorsqu'on selectionne une table \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_main_window_ae0e46dc3da4ee07bf66e73e20300220c}{\index{Main\-Window@{Main\-Window}!on\-\_\-push\-Button\-\_\-2\-\_\-clicked@{on\-\_\-push\-Button\-\_\-2\-\_\-clicked}}
+\index{on\-\_\-push\-Button\-\_\-2\-\_\-clicked@{on\-\_\-push\-Button\-\_\-2\-\_\-clicked}!MainWindow@{Main\-Window}}
+\subsubsection[{on\-\_\-push\-Button\-\_\-2\-\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::on\-\_\-push\-Button\-\_\-2\-\_\-clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_main_window_ae0e46dc3da4ee07bf66e73e20300220c}
+
+
+bouton sauvegarder le resultat $\ast$\-Permet d'exporter le tableaux du resultat au format '.csv' 
+
+\hypertarget{class_main_window_a4de79c63c7fa0b8d7c468ac71f20be81}{\index{Main\-Window@{Main\-Window}!on\-\_\-push\-Button\-\_\-clicked@{on\-\_\-push\-Button\-\_\-clicked}}
+\index{on\-\_\-push\-Button\-\_\-clicked@{on\-\_\-push\-Button\-\_\-clicked}!MainWindow@{Main\-Window}}
+\subsubsection[{on\-\_\-push\-Button\-\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::on\-\_\-push\-Button\-\_\-clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_main_window_a4de79c63c7fa0b8d7c468ac71f20be81}
+
+
+bouton ouvrir $\ast$\-Permet d'ouvrir un fichier '.sql' pour charger des requête dans le vecteur et das la liste prévue à cette effet 
+
+\hypertarget{class_main_window_a8ba1fa24949d7a52ddac98b8723819a0}{\index{Main\-Window@{Main\-Window}!on\-\_\-push\-Button\-Clean\-\_\-clicked@{on\-\_\-push\-Button\-Clean\-\_\-clicked}}
+\index{on\-\_\-push\-Button\-Clean\-\_\-clicked@{on\-\_\-push\-Button\-Clean\-\_\-clicked}!MainWindow@{Main\-Window}}
+\subsubsection[{on\-\_\-push\-Button\-Clean\-\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::on\-\_\-push\-Button\-Clean\-\_\-clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_main_window_a8ba1fa24949d7a52ddac98b8723819a0}
+
+
+bouton nettoyer $\ast$\-Permet de nettoyer la zone de resultat,zone d'erreur et la zone de texte 
+
+\hypertarget{class_main_window_a673e50dcdf9b19caf39cd0c9fc56bde1}{\index{Main\-Window@{Main\-Window}!on\-\_\-push\-Button\-Enregistrer\-\_\-clicked@{on\-\_\-push\-Button\-Enregistrer\-\_\-clicked}}
+\index{on\-\_\-push\-Button\-Enregistrer\-\_\-clicked@{on\-\_\-push\-Button\-Enregistrer\-\_\-clicked}!MainWindow@{Main\-Window}}
+\subsubsection[{on\-\_\-push\-Button\-Enregistrer\-\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::on\-\_\-push\-Button\-Enregistrer\-\_\-clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_main_window_a673e50dcdf9b19caf39cd0c9fc56bde1}
+
+
+bouton enregistrer $\ast$\-Permet de sauvegarder ce qui a été historiser dans un document '.sql' 
+
+\hypertarget{class_main_window_ad2b7c5e0d452224c1ef4f9ee2d093f07}{\index{Main\-Window@{Main\-Window}!on\-\_\-push\-Button\-Erreur\-\_\-clicked@{on\-\_\-push\-Button\-Erreur\-\_\-clicked}}
+\index{on\-\_\-push\-Button\-Erreur\-\_\-clicked@{on\-\_\-push\-Button\-Erreur\-\_\-clicked}!MainWindow@{Main\-Window}}
+\subsubsection[{on\-\_\-push\-Button\-Erreur\-\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::on\-\_\-push\-Button\-Erreur\-\_\-clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_main_window_ad2b7c5e0d452224c1ef4f9ee2d093f07}
+
+
+bouton erreur $\ast$\-Permet d'afficher l'erreur S\-Q\-L de la requête quand la requête n'est pas correct 
+
+\hypertarget{class_main_window_aa8a14a7ebcd9224ebf3af3f468d831b1}{\index{Main\-Window@{Main\-Window}!on\-\_\-push\-Button\-Historiser\-\_\-clicked@{on\-\_\-push\-Button\-Historiser\-\_\-clicked}}
+\index{on\-\_\-push\-Button\-Historiser\-\_\-clicked@{on\-\_\-push\-Button\-Historiser\-\_\-clicked}!MainWindow@{Main\-Window}}
+\subsubsection[{on\-\_\-push\-Button\-Historiser\-\_\-clicked}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::on\-\_\-push\-Button\-Historiser\-\_\-clicked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_main_window_aa8a14a7ebcd9224ebf3af3f468d831b1}
+
+
+bouton historiser $\ast$\-Permet de mettre dans la liste historique et dans le vecteur de requête la requête inscrite dans la zone de texte 
+
+\hypertarget{class_main_window_a6c58d1c698cb819af30fd5c2e8aefcf0}{\index{Main\-Window@{Main\-Window}!on\-\_\-text\-Edit\-\_\-text\-Changed@{on\-\_\-text\-Edit\-\_\-text\-Changed}}
+\index{on\-\_\-text\-Edit\-\_\-text\-Changed@{on\-\_\-text\-Edit\-\_\-text\-Changed}!MainWindow@{Main\-Window}}
+\subsubsection[{on\-\_\-text\-Edit\-\_\-text\-Changed}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::on\-\_\-text\-Edit\-\_\-text\-Changed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [slot]}}}\label{class_main_window_a6c58d1c698cb819af30fd5c2e8aefcf0}
+
+
+lorseque le texte change dans l'editeur de texte pour la requête $\ast$\-Permet de verifier si la requête est correcte à chaque fois que le texte change 
+
+\hypertarget{class_main_window_a1806a3496bae552b99a6c4e7e94c6b06}{\index{Main\-Window@{Main\-Window}!remplire\-Liste\-Table@{remplire\-Liste\-Table}}
+\index{remplire\-Liste\-Table@{remplire\-Liste\-Table}!MainWindow@{Main\-Window}}
+\subsubsection[{remplire\-Liste\-Table}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Window\-::remplire\-Liste\-Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}}\label{class_main_window_a1806a3496bae552b99a6c4e7e94c6b06}
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_main_window_a1806a3496bae552b99a6c4e7e94c6b06_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_main_window_a35466a70ed47252a0191168126a352a5}{\index{Main\-Window@{Main\-Window}!ui@{ui}}
+\index{ui@{ui}!MainWindow@{Main\-Window}}
+\subsubsection[{ui}]{\setlength{\rightskip}{0pt plus 5cm}Ui\-::\-Main\-Window$\ast$ Main\-Window\-::ui\hspace{0.3cm}{\ttfamily [private]}}}\label{class_main_window_a35466a70ed47252a0191168126a352a5}
+\hypertarget{class_main_window_a5f49a678546840890fce99215d0d086c}{\index{Main\-Window@{Main\-Window}!vect\-Requete@{vect\-Requete}}
+\index{vect\-Requete@{vect\-Requete}!MainWindow@{Main\-Window}}
+\subsubsection[{vect\-Requete}]{\setlength{\rightskip}{0pt plus 5cm}Q\-Vector$<$Q\-String$>$ Main\-Window\-::vect\-Requete}}\label{class_main_window_a5f49a678546840890fce99215d0d086c}
+
+
+vect\-Requete $\ast$vecteur de requête qui permet stocker les requête historiser 
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mainwindow_8h}{mainwindow.\-h}\item 
+\hyperlink{mainwindow_8cpp}{mainwindow.\-cpp}\end{DoxyCompactItemize}

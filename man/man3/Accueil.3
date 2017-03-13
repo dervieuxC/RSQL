@@ -1,0 +1,122 @@
+.TH "Accueil" 3 "Mon Mar 13 2017" "RSQL" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Accueil \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <accueil\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBAccueil\fP (QWidget *parent=0)"
+.br
+.RI "\fI\fBAccueil\fP\&. \fP"
+.ti -1c
+.RI "\fB~Accueil\fP ()"
+.br
+.in -1c
+.SS "Private Slots"
+
+.in +1c
+.ti -1c
+.RI "void \fBon_pushButton_clicked\fP ()"
+.br
+.RI "\fIbouton connexion *bouton quitter qui permet de fermer l'application \fP"
+.ti -1c
+.RI "void \fBon_pushButtonConnexion_clicked\fP ()"
+.br
+.RI "\fIbouton quitter *bouton de connexion qui permet d'acceder à la mainWindow *apres avoir entrer son identifiant et son mot de passe \fP"
+.ti -1c
+.RI "void \fBon_lineEditServeur_textChanged\fP (const QString &arg1)"
+.br
+.RI "\fIlorsque le texte du lineEdit change \fP"
+.ti -1c
+.RI "void \fBon_lineEditLogin_textChanged\fP (const QString &arg1)"
+.br
+.RI "\fIlorsque le texte du lineEdit change \fP"
+.ti -1c
+.RI "void \fBon_lineEditMdp_textChanged\fP (const QString &arg1)"
+.br
+.RI "\fIlorsque le texte du lineEdit change \fP"
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBactBoutonConnexion\fP ()"
+.br
+.RI "\fIactivation du bouton connexion *Permet d'activer le bouton connexion lorsque tout les champs de la connexion sont remplie \fP"
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "Ui::Accueil * \fBui\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Accueil::Accueil (QWidget *parent = \fC0\fP)\fC [explicit]\fP"
+
+.PP
+\fBAccueil\fP\&. \fBParameters:\fP
+.RS 4
+\fIparent\fP *constructeur permettant de créer le dialog de connexion 
+.RE
+.PP
+
+.SS "Accueil::~Accueil ()"
+*destructeur permettant de supprimer le dialog de connexion 
+.SH "Member Function Documentation"
+.PP 
+.SS "void Accueil::actBoutonConnexion ()\fC [private]\fP"
+
+.PP
+activation du bouton connexion *Permet d'activer le bouton connexion lorsque tout les champs de la connexion sont remplie 
+.SS "void Accueil::on_lineEditLogin_textChanged (const QString &arg1)\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+lorsque le texte du lineEdit change \fBParameters:\fP
+.RS 4
+\fIce\fP qu'il y a dans la line edit *Permet de verifier lorsqe le texte du lineEdit identifiant change de savoir si tout les lineEdit son remplie 
+.RE
+.PP
+
+.SS "void Accueil::on_lineEditMdp_textChanged (const QString &arg1)\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+lorsque le texte du lineEdit change \fBParameters:\fP
+.RS 4
+\fIce\fP qu'il y a dans la line edit *Permet de verifier lorsqe le texte du lineEdit mot de passe change de savoir si tout les lineEdit son remplie 
+.RE
+.PP
+
+.SS "void Accueil::on_lineEditServeur_textChanged (const QString &arg1)\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+lorsque le texte du lineEdit change \fBParameters:\fP
+.RS 4
+\fIce\fP qu'il y a dans la line edit *Permet de verifier lorsqe le texte du lineEdit serveur change de savoir si tout les lineEdit son remplie 
+.RE
+.PP
+
+.SS "void Accueil::on_pushButton_clicked ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+bouton connexion *bouton quitter qui permet de fermer l'application 
+.SS "void Accueil::on_pushButtonConnexion_clicked ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+bouton quitter *bouton de connexion qui permet d'acceder à la mainWindow *apres avoir entrer son identifiant et son mot de passe 
+.SH "Member Data Documentation"
+.PP 
+.SS "Ui::Accueil* Accueil::ui\fC [private]\fP"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for RSQL from the source code\&.

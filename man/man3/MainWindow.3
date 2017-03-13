@@ -1,0 +1,195 @@
+.TH "MainWindow" 3 "Mon Mar 13 2017" "RSQL" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MainWindow \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <mainwindow\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBMainWindow\fP (QWidget *parent=0)"
+.br
+.RI "\fI\fBMainWindow\fP\&. \fP"
+.ti -1c
+.RI "\fB~MainWindow\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "QVector< QString > \fBvectRequete\fP"
+.br
+.RI "\fIvectRequete *vecteur de requête qui permet stocker les requête historiser \fP"
+.in -1c
+.SS "Private Slots"
+
+.in +1c
+.ti -1c
+.RI "void \fBon_comboBoxListBDD_activated\fP (const QString &arg1)"
+.br
+.RI "\fIselection de la données dans la combo box \fP"
+.ti -1c
+.RI "void \fBon_listWidgetTable_itemClicked\fP (QListWidgetItem *item)"
+.br
+.RI "\fIselction d'une tables de la liste \fP"
+.ti -1c
+.RI "void \fBon_textEdit_textChanged\fP ()"
+.br
+.RI "\fIlorseque le texte change dans l'editeur de texte pour la requête *Permet de verifier si la requête est correcte à chaque fois que le texte change \fP"
+.ti -1c
+.RI "void \fBon_pushButtonErreur_clicked\fP ()"
+.br
+.RI "\fIbouton erreur *Permet d'afficher l'erreur SQL de la requête quand la requête n'est pas correct \fP"
+.ti -1c
+.RI "void \fBon_pushButtonClean_clicked\fP ()"
+.br
+.RI "\fIbouton nettoyer *Permet de nettoyer la zone de resultat,zone d'erreur et la zone de texte \fP"
+.ti -1c
+.RI "void \fBon_pushButtonHistoriser_clicked\fP ()"
+.br
+.RI "\fIbouton historiser *Permet de mettre dans la liste historique et dans le vecteur de requête la requête inscrite dans la zone de texte \fP"
+.ti -1c
+.RI "void \fBon_pushButtonEnregistrer_clicked\fP ()"
+.br
+.RI "\fIbouton enregistrer *Permet de sauvegarder ce qui a été historiser dans un document '\&.sql' \fP"
+.ti -1c
+.RI "void \fBon_pushButton_clicked\fP ()"
+.br
+.RI "\fIbouton ouvrir *Permet d'ouvrir un fichier '\&.sql' pour charger des requête dans le vecteur et das la liste prévue à cette effet \fP"
+.ti -1c
+.RI "void \fBon_action_Quitter_triggered\fP ()"
+.br
+.RI "\fImenu fichier/quitter *Permet de quitter l'application \fP"
+.ti -1c
+.RI "void \fBon_action_Save_triggered\fP ()"
+.br
+.RI "\fImenu fichier/sauvegarde *Permet de sauvegarder dans un fichier '\&.sql' ce qui il ya dans la liste et dans le vecteur \fP"
+.ti -1c
+.RI "void \fBon_action_Open_triggered\fP ()"
+.br
+.RI "\fImenu fichier/ouvrir *Permet d'ouvrir un document '\&.sql' pour charger des requête dans le vecteur et la lsite \fP"
+.ti -1c
+.RI "void \fBon_pushButton_2_clicked\fP ()"
+.br
+.RI "\fIbouton sauvegarder le resultat *Permet d'exporter le tableaux du resultat au format '\&.csv' \fP"
+.ti -1c
+.RI "void \fBon_listWidgetHistorique_itemClicked\fP (QListWidgetItem *item)"
+.br
+.RI "\fIl'utilisateur clicl sur un item de la liste de l'historique \fP"
+.in -1c
+.SS "Private Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBremplireListeTable\fP ()"
+.br
+.in -1c
+.SS "Private Attributes"
+
+.in +1c
+.ti -1c
+.RI "Ui::MainWindow * \fBui\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "MainWindow::MainWindow (QWidget *parent = \fC0\fP)\fC [explicit]\fP"
+
+.PP
+\fBMainWindow\fP\&. \fBParameters:\fP
+.RS 4
+\fIparent\fP *constructeur de la mainwindow 
+.RE
+.PP
+
+.SS "MainWindow::~MainWindow ()"
+*destructeur de la mainwindow 
+.SH "Member Function Documentation"
+.PP 
+.SS "void MainWindow::on_action_Open_triggered ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+menu fichier/ouvrir *Permet d'ouvrir un document '\&.sql' pour charger des requête dans le vecteur et la lsite 
+.SS "void MainWindow::on_action_Quitter_triggered ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+menu fichier/quitter *Permet de quitter l'application 
+.SS "void MainWindow::on_action_Save_triggered ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+menu fichier/sauvegarde *Permet de sauvegarder dans un fichier '\&.sql' ce qui il ya dans la liste et dans le vecteur 
+.SS "void MainWindow::on_comboBoxListBDD_activated (const QString &arg1)\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+selection de la données dans la combo box \fBParameters:\fP
+.RS 4
+\fInom\fP de l'objet seelctionner *Permet de selectionner un objet dans la combo box et donc d'initialiser la base de données et les tables de celle-ci 
+.RE
+.PP
+
+.SS "void MainWindow::on_listWidgetHistorique_itemClicked (QListWidgetItem *item)\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+l'utilisateur clicl sur un item de la liste de l'historique \fBParameters:\fP
+.RS 4
+\fIitem\fP *Permet d'ajouter la requête selectionner dans la zone de texte 
+.RE
+.PP
+
+.SS "void MainWindow::on_listWidgetTable_itemClicked (QListWidgetItem *item)\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+selction d'une tables de la liste \fBParameters:\fP
+.RS 4
+\fIitem\fP *Permet d'initialiser la liste des champs lorsqu'on selectionne une table 
+.RE
+.PP
+
+.SS "void MainWindow::on_pushButton_2_clicked ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+bouton sauvegarder le resultat *Permet d'exporter le tableaux du resultat au format '\&.csv' 
+.SS "void MainWindow::on_pushButton_clicked ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+bouton ouvrir *Permet d'ouvrir un fichier '\&.sql' pour charger des requête dans le vecteur et das la liste prévue à cette effet 
+.SS "void MainWindow::on_pushButtonClean_clicked ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+bouton nettoyer *Permet de nettoyer la zone de resultat,zone d'erreur et la zone de texte 
+.SS "void MainWindow::on_pushButtonEnregistrer_clicked ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+bouton enregistrer *Permet de sauvegarder ce qui a été historiser dans un document '\&.sql' 
+.SS "void MainWindow::on_pushButtonErreur_clicked ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+bouton erreur *Permet d'afficher l'erreur SQL de la requête quand la requête n'est pas correct 
+.SS "void MainWindow::on_pushButtonHistoriser_clicked ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+bouton historiser *Permet de mettre dans la liste historique et dans le vecteur de requête la requête inscrite dans la zone de texte 
+.SS "void MainWindow::on_textEdit_textChanged ()\fC [private]\fP, \fC [slot]\fP"
+
+.PP
+lorseque le texte change dans l'editeur de texte pour la requête *Permet de verifier si la requête est correcte à chaque fois que le texte change 
+.SS "void MainWindow::remplireListeTable ()\fC [private]\fP"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "Ui::MainWindow* MainWindow::ui\fC [private]\fP"
+
+.SS "QVector<QString> MainWindow::vectRequete"
+
+.PP
+vectRequete *vecteur de requête qui permet stocker les requête historiser 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for RSQL from the source code\&.
